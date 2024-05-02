@@ -9,7 +9,7 @@ let config = {
     language: "en",
     locale: "en-US",
     logLevel: ["INFO", "LOG", "WARN", "ERROR"],
-    timeFormat: 24,
+    timeFormat: 12, // Changed to 12-hour format
     units: "imperial",
 
     modules: [
@@ -48,7 +48,7 @@ let config = {
             config: {
                 apikey: 'e7a5db37-b3cc-489f-8b5a-f5d2da33c6ff', // Your CoinMarketCap API key
                 currency: ['ethereum', 'bitcoin'],
-                conversion: 'USD', // Changed to USD
+                conversion: 'USD',
                 headers: ['change24h', 'change1h', 'change7d'],
                 displayType: 'logoWithChanges',
                 showGraphs: true
@@ -105,3 +105,4 @@ let config = {
 
 /*************** DO NOT EDIT THE LINE BELOW ***************/
 if (typeof module !== "undefined") { module.exports = config; }
+
