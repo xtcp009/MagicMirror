@@ -9,7 +9,7 @@ let config = {
     language: "en",
     locale: "en-US",
     logLevel: ["INFO", "LOG", "WARN", "ERROR"],
-    timeFormat: 12, // Changed to 12-hour format
+    timeFormat: 12,
     units: "imperial",
 
     modules: [
@@ -83,6 +83,10 @@ let config = {
                     {
                         title: "New York Times",
                         url: "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml"
+                    },
+                    {
+                        title: "Fox News",
+                        url: "https://feeds.foxnews.com/foxnews/latest"
                     }
                 ],
                 showSourceTitle: true,
@@ -105,4 +109,3 @@ let config = {
 
 /*************** DO NOT EDIT THE LINE BELOW ***************/
 if (typeof module !== "undefined") { module.exports = config; }
-
