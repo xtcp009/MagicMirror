@@ -15,6 +15,18 @@ let config = {
       
         modules: [
             {
+                module: "MMM-cryptocurrency",
+                position: "top_right",
+                config: {
+                    apikey: 'e7a5db37-b3cc-489f-8b5a-f5d2da33c6ff', // Your CoinMarketCap API key
+                    currency: ['ethereum', 'bitcoin'],
+                    conversion: 'USD',
+                    headers: ['change24h', 'change1h', 'change7d'],
+                    displayType: 'logoWithChanges',
+                    showGraphs: true
+                }
+            },
+            {
                 module: "alert",
             },
             {
